@@ -91,7 +91,10 @@ class PhraseFormState extends State<PhraseForm> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          TextFormField(controller: myController,),
+          TextFormField(
+            controller: myController,
+            keyboardType: TextInputType.number,
+          ),
           RaisedButton(
               onPressed: () {
                 _updatePhrase(myController.text);
